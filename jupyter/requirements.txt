@@ -12,4 +12,4 @@ sqlalchemy
 sqlmodel
 psycopg2-binary
 asyncpg
-sqlalchemy-cockroachdb
+git+https://github.com/gordthompson/sqlalchemy-cockroachdb.git@asyncpg_test
