@@ -8,8 +8,12 @@ retrolab
 
 # specific to this project goal
 pydantic
-sqlalchemy
-sqlmodel
+git+https://github.com/sqlalchemy/sqlalchemy
+# sqlmodel requires sqlalchemy <1.5 to install, but does still work with 
+# sqlalchemy 2.x in notebook testing
+# commented out here so Dockerfile can build
+# do a manual install once Notebook is running
+#sqlmodel
 psycopg2-binary
 asyncpg
 git+https://github.com/gordthompson/sqlalchemy-cockroachdb.git@asyncpg_test
